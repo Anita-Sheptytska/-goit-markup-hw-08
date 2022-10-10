@@ -650,14 +650,41 @@ img {
   padding-bottom: 60px;
   padding-top: 60px;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__logo {
@@ -697,7 +724,13 @@ img {
 }
 
 .join {
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
 }
 
 .join__title {
@@ -709,12 +742,23 @@ img {
   color: var(--light-txt-cl);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .join__title {
+    text-align: center;
+  }
+}
 
 .join__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  margin-left: 137px;
+}
+@media screen and (min-width: 768px) {
+  .join__list {
+    margin: auto;
+  }
 }
 
 .join__link {
@@ -744,7 +788,12 @@ img {
 }
 
 .send {
-  margin-left: 93px;
+  margin-left: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .send {
+    margin-left: 93px;
+  }
 }
 
 .send__title {
@@ -757,12 +806,19 @@ img {
   color: var(--light-txt-cl);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .send__title {
+    margin-top: 60px;
+  }
+}
 
-.send__email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
+@media screen and (min-width: 1200px) {
+  .send__email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .send__input {
@@ -777,6 +833,8 @@ img {
   background-color: transparent;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+  width: 100%;
 }
 .send__input:focus, .send__input:hover {
   border-color: var(--accent-txt-cl);
@@ -825,9 +883,6 @@ img {
 }
 
 .send__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
