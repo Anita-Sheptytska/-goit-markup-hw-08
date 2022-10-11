@@ -529,10 +529,6 @@ img {
   }
 }
 
-.hero__container {
-  width: 480px;
-}
-
 .hero__title {
   font-weight: 900;
   font-size: 26px;
@@ -541,7 +537,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
