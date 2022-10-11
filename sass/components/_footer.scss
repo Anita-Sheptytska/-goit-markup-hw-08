@@ -2,14 +2,9 @@
     background-color: var(--main-bg-cl);
     padding-bottom: 60px;
     padding-top: 60px;
-
-    @media screen and (max-width: 768px) {
-            padding-top: 30px;
-        }
     
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
-        padding-top: 30px;
     }    
 }
 
@@ -24,5 +19,6 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
+        
     }
 }

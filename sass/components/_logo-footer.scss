@@ -6,4 +6,12 @@
     &--white {
         color: var(--light-txt-cl);
     }
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }

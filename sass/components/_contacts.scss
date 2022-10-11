@@ -1,8 +1,18 @@
 .contact {
-    display: flex;
+    display: none;
     gap: 50px;
-    margin-left: auto;
-    padding-top: 32px 0;
+    
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 96px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+        padding-top: 32px 0;
+    }
 }
 
 .mail,
@@ -13,6 +23,8 @@
 .tel__link {
     display: flex;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     &:hover,
     &:focus {
@@ -23,6 +35,8 @@
 .mail__link {
     display: flex;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     &:hover,
     &:focus {
