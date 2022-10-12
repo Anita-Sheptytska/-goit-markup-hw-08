@@ -154,7 +154,7 @@ img {
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: auto;
 }
 .header__logo--black {
   color: var(--accent-txt-cl);
@@ -290,8 +290,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .mail__link:hover, .mail__link:focus {
   color: var(--accent-txt-cl);
@@ -317,7 +315,6 @@ img {
   width: 40px;
   height: 40px;
   padding: 0;
-  margin-left: auto;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -518,8 +515,8 @@ img {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/desc21x-min.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/desc21x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/desc2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/desc2x-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -539,6 +536,11 @@ img {
   color: var(--light-txt-cl);
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__button {
