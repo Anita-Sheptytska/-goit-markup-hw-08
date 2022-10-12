@@ -239,7 +239,7 @@ img {
   border: transparent;
   position: absolute;
   opacity: 1;
-  bottom: -34px;
+  bottom: -3px;
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
 }
@@ -251,7 +251,7 @@ img {
 @media screen and (min-width: 768px) {
   .contact {
     display: block;
-    margin-left: 96px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
