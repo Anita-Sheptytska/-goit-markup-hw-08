@@ -15,10 +15,10 @@
     line-height: calc(33 / 28);
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
         font-size: 36px;
         line-height: 42px;
     }
@@ -61,10 +61,14 @@
 .team__item {
     background-color: var(--light-txt-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
+    
+    &::not(:last-child) {
+        margin-bottom: 30px;
+    }
 
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 0;
     }
     
     @media screen and (min-width: 1200px) {
