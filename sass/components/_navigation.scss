@@ -26,9 +26,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     
-    @media screen and (min-width: 1200px) {
-        padding: 0;
-    }
+    
 
     &:hover,
     &:focus {
@@ -74,10 +72,27 @@
         transition: opacity 250ms var(--timing-function);
         }
 
-                
+        @media screen and (min-width: 1200px) {
+            padding: 0;
+        }
+}
 
-    
+.nav__link--studio::after,
+.nav__link--portfolio::after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-bg-cl);
+    border-radius: 2px;
+    border: transparent;
+    position: absolute;
+    opacity: 1;
+    bottom: -3px;
+    transition: opacity 250ms var(--timing-function);
 
-        
+    @media screen and (min-width: 1200px) {
+        bottom: -37px;
+    }
 }
 
