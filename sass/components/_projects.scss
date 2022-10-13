@@ -3,7 +3,8 @@
 
     @media screen and (min-width: 1200px) {
         display: contents;
-    }       
+        padding-bottom: 94px;
+    }      
 }
 
 .projects__title {
@@ -18,10 +19,6 @@
 .projects__list {
     display: flex;
     gap: 30px;
-
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 94px;
-    }
 }
 
 .projects__content {
